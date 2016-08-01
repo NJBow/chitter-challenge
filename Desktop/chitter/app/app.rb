@@ -33,7 +33,7 @@ require 'sinatra/flash'
    end
 
    get '/chit_chat' do
-     erb :'poops/index'
+     erb :'chit_chat/index'
    end
 
   get '/sessions/new' do
@@ -56,7 +56,6 @@ require 'sinatra/flash'
        @current_user ||= User.get(session[:user_id])
      end
    end
-
 
    run! if app_file == $0
  end
